@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pragya Thapa Magar - Personal Profile</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="#">
+</head>
+<body>
+
+  <header>
+    <h1 id="main-title">Pragya Thapa Magar's Portfolio</h1>
+    <p>Personal Profile Page with Flexbox Layout</p>
+    <!-- Dark Mode Toggle Button -->
+    <button id="theme-toggle" type="button">Toggle Dark Mode</button>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav class="nav-menu" aria-label="Main navigation">
+    <a href="#about">About Me</a>
+    <a href="#profile">Profile</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <!-- Content Wrapper Layout -->
+    <div class="content-wrapper">
+      
+      <section class="card" id="about">
+        <h2>Introduction</h2>
+        <p>Hello! I am Pragya Thapa Magar. I am 20 years old, and I am building my personal portfolio with HTML, CSS, and JavaScript.</p>
+        <p>Press F12 to inspect the cards and check the Console output for dynamic JavaScript logs.</p>
+      </section>
+
+      <section class="card" id="profile">
+        <h2>My Profile</h2>
+        <img src="profile.jpg" alt="Pragya Thapa Magar profile photo" class="profile-img">
+        <p><strong>Name:</strong> Pragya Thapa Magar</p>
+        <p><strong>Age:</strong> 20 yrs</p>
+        <p><strong>Email:</strong> <a href="mailto:pragyathapamagar184@gmail.com">pragyathapamagar184@gmail.com</a></p>
+        <p><strong>Contact:</strong> <a href="tel:01064985206">01064985206</a></p>
+        <p>I enjoy web development, creative design, and learning new digital skills.</p>
+      </section>
+
+    </div>
+
+    <!-- Step 1: Hobby/Skill List Rendering -->
+    <section class="card" id="hobbies">
+      <h2>My Hobbies &amp; Skills</h2>
+      <div id="hobby-list"></div>
+    </section>
+
+    <!-- Step 2: Hobby Gallery Extension -->
+    <section class="card" id="hobby-gallery">
+      <h2>Hobby Gallery</h2>
+      <img id="gallery-img" src="https://picsum.photos/seed/pragyahobby1/600/350" alt="Hobby gallery photo">
+      <button id="next-photo-btn" type="button">Next Photo</button>
+    </section>
+
+    <section id="contact">
+      <h2>Leave a Message</h2>
+      <form>
+        <label for="visitor-name">Name</label>
+        <input id="visitor-name" type="text" placeholder="Your name">
+        <label for="visitor-email">Email</label>
+        <input id="visitor-email" type="email" placeholder="Your email">
+        <label for="visitor-message">Message</label>
+        <textarea id="visitor-message" rows="5" placeholder="Your message"></textarea>
+        <button type="button">Send Message (Layout Demo)</button>
+      </form>
+      <p>This form demonstrates HTML layout; it does not send messages.</p>
+    </section>
+  </main>
+  
+  <footer><p>&copy; 2026 Pragya Thapa Magar | Personal Web Portfolio</p></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
