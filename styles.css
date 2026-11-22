@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7fb;
+  color: #1e293b;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+  background-color: #0284c7;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin-bottom: 0.4rem;
+}
+
+#theme-toggle {
+  margin-top: 1rem;
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #0f172a;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  background-color: #334155;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: #e2e8f0;
+  padding: 0.85rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  color: #0284c7;
+}
+
+main {
+  max-width: 960px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.card,
+#contact {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.content-wrapper .card {
+  flex: 1 1 320px;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-bottom: 0.85rem;
+  color: #0284c7;
+}
+
+p {
+  margin-bottom: 0.65rem;
+}
+
+a {
+  color: #0284c7;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #38bdf8;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Week 12 Step 1: Hobby List Styling */
+#hobby-list ul {
+  padding-left: 1.5rem;
+}
+
+#hobby-list li {
+  margin: 0.45rem 0;
+  font-size: 1.05rem;
+}
+
+/* Week 12 Step 2: Hobby Gallery Styling */
+#gallery-img {
+  width: 100%;
+  max-width: 480px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 0.85rem;
+  border: 2px solid #38bdf8;
+}
+
+#next-photo-btn {
+  padding: 0.55rem 1.15rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #38bdf8;
+  color: #0f172a;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#next-photo-btn:hover {
+  background-color: #0ea5e9;
+}
+
+/* Contact Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+input,
+textarea {
+  padding: 0.6rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+form button {
+  align-self: flex-start;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #0284c7;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1.25rem;
+  background-color: #e2e8f0;
+  color: #334155;
+  margin-top: 2rem;
+}
+
+/* Week 11: Dark Mode Rules */
+body.dark-mode {
+  background-color: #0b1120;
+  color: #e2e8f0;
+}
+
+body.dark-mode header {
+  background-color: #0f172a;
+}
+
+body.dark-mode #theme-toggle {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+body.dark-mode .nav-menu,
+body.dark-mode footer {
+  background-color: #0f172a;
+  color: #cbd5e1;
+}
+
+body.dark-mode .nav-menu a {
+  color: #e2e8f0;
+}
+
+body.dark-mode .nav-menu a:hover,
+body.dark-mode h2,
+body.dark-mode a {
+  color: #38bdf8;
+}
+
+body.dark-mode .card,
+body.dark-mode #contact {
+  background-color: #0f172a;
+  border-color: #1e293b;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
