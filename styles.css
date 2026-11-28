@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -220,4 +225,30 @@ body.dark-mode textarea {
   background-color: #1e293b;
   border-color: #334155;
   color: #f8fafc;
+}
+
+/* Week 13: Mobile Responsive Rules */
+@media (max-width: 768px) {
+  nav,
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .card,
+  #gallery-img {
+    max-width: 100%;
+  }
+
+  button,
+  #theme-toggle,
+  #next-photo-btn,
+  form button {
+    min-height: 44px;
+  }
 }
